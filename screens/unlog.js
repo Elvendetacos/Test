@@ -1,7 +1,6 @@
 import React from "react";
 import Constants from 'expo-constants';
 import { StyleSheet, Text, View, Image, Button, TouchableHighlight, ImageBackground, ScrollView } from 'react-native';
-import Alarm from '../images/bell.png';
 import Cascade from '../images/cascada.jpg';
 import First from '../images/primera.jpg';
 import Second from '../images/segunda.jpg';
@@ -12,7 +11,7 @@ import TipCard from "../components/tipCard";
 import User from '../images/user.png';
 
 
-function Home() {
+function Unlog() {
     return ( 
         <View style={{ flexGrow: 1}}>
             <View style={{backgroundColor: '#95E7FB', height: 116}}>
@@ -21,11 +20,10 @@ function Home() {
                         <Image style={styles.profile} source={User}></Image>
                     </View>
                     <View style={{flex: 2, justifyContent: 'center', alignItems: 'flex-start'}}>
-                        <Text style={styles.users}>Brian Hernández</Text>
-                        <Text style={styles.email}>reversdead@gmail.com</Text>
+                        <Text style={styles.users}>Inicia Sesión</Text>
+                        <Text style={styles.email}>Registrate</Text>
                     </View>
                     <View style={{flex: 1, justifyContent: 'center', alignItems:'center'}}>
-                        <Image source={Alarm} style={styles.alarm} />
                     </View>
                 </View>
             </View>
@@ -145,4 +143,4 @@ const styles = StyleSheet.create({
     }
   });
 
-export default Home;
+export default Unlog;
